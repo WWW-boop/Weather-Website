@@ -29,7 +29,7 @@ def weather():
         "temp": str(list_of_data['main']['temp']) + 'k',
         "temp_cel": tocelcius(list_of_data['main']['temp']) + 'C',
         "humidity": str(list_of_data['main']['humidity']) + '%',
-        
+        "wind_speed": str(list_of_data['wind']['speed']) + 'm/s',
     }
     return render_template('index.html',data=data)
 
