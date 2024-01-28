@@ -15,17 +15,21 @@
     </form>
     
     {% if data %}
-        <h2>Current Temperature:</h2>
+
+        <h2>City Name:</h2>
+        <p>{{ data["cityname"]}}</p>
+
+        <h3>Current Temperature:</h3>
         <p>{{ data["temp"] }}</p>
         
-        <h2>Temperature in Celsius:</h2>
+        <h3>Temperature in Celsius:</h3>
         <p>{{ data["temp_cel"] }}</p>
 
-        <h2>Current Humidity:</h2>
-        <p>{{data["humidity"]}}</p>
+        <h3>Current Humidity:</h3>
+        <p>{{ data["humidity"]}}</p>
 
-        <h2>Current Wind Speed:</h2>
-        <p>{{data["wind_speed"]}}</p>
+        <h3>Current Wind Speed:</h3>
+        <p>{{ data["wind_speed"]}}</p>
     {% endif %}
     
     {% if not data %}

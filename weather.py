@@ -26,6 +26,8 @@ def weather():
 
     
     data = {
+        
+        "cityname": str(city),
         "temp": str(list_of_data['main']['temp']) + 'k',
         "temp_cel": tocelcius(list_of_data['main']['temp']) + 'C',
         "humidity": str(list_of_data['main']['humidity']) + '%',
