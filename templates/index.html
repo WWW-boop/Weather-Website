@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather Information</h1>
+    <form method="post" action="/">
+        <label for="city">Enter City:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    
+    {% if data %}
+        <h2>Current Temperature:</h2>
+        <p>{{ data["temp"] }}</p>
+        
+        <h2>Temperature in Celsius:</h2>
+        <p>{{ data["temp_cel"] }}</p>
+    {% endif %}
+    
+    {% if not data %}
+        <p>City not found. Please try again.</p>
+    {% endif %}
+</body>
+</html>
