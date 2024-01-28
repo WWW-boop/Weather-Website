@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    
 </head>
 <body>
     <h1>Weather Information</h1>
@@ -19,6 +20,9 @@
         
         <h2>Temperature in Celsius:</h2>
         <p>{{ data["temp_cel"] }}</p>
+
+        <h2>Current Humidity:</h2>
+        <p>{{data["humidity"]}}</p>
     {% endif %}
     
     {% if not data %}
@@ -26,3 +30,4 @@
     {% endif %}
 </body>
 </html>
+

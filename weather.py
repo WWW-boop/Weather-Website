@@ -28,6 +28,8 @@ def weather():
     data = {
         "temp": str(list_of_data['main']['temp']) + 'k',
         "temp_cel": tocelcius(list_of_data['main']['temp']) + 'C',
+        "humidity": str(list_of_data['main']['humidity']) + '%',
+        
     }
     return render_template('index.html',data=data)
 
