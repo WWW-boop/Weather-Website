@@ -7,6 +7,10 @@ app = Flask(__name__)
 def tocelcius(temp):
     return str(round(float(temp) - 273.16,2))
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
 @app.route('/',methods=['POST','GET'])
 def weather():
     api_key = 'ef864563f67b6b77a069d7d372f19693'
@@ -34,6 +38,7 @@ def weather():
         "wind_speed": str(list_of_data['wind']['speed']) + 'm/s',
     }
     return render_template('index.html',data=data)
+
 
 
 
