@@ -15,13 +15,13 @@ def home():
 def weather():
     api_key = 'ef864563f67b6b77a069d7d372f19693'
     if request.method == 'POST':
-        city = request.form['city']
+        country = request.form['country']
     else:
         
-        city = 'Songkhla'
+        country = 'Japan'
 
     try:
-        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid='+api_key).read()
+        source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + country + '&appid='+api_key).read()
     except:
         return abort(404)
     
@@ -31,7 +31,7 @@ def weather():
     
     data = {
         
-        "cityname": str(city),
+        "cityname": str(country),
         "temp": str(list_of_data['main']['temp']) + 'k',
         "temp_cel": tocelcius(list_of_data['main']['temp']) + 'C',
         "humidity": str(list_of_data['main']['humidity']) + '%',

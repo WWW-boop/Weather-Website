@@ -20,8 +20,17 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="home">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="continent" role="button" data-bs-toggle="dropdown" aria-expanded="false">Continent</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Asia">Asia</a></li>
+                  <li><a class="dropdown-item" href="Africa">Africa</a></li>
+                  <li><a class="dropdown-item" href="Europe">Europe</a></li>
+                  <li><a class="dropdown-item" href="North America">North America</a></li>
+                  <li><a class="dropdown-item" href="South America">South America</a></li>
+                  <li><a class="dropdown-item" href="Australia">Australia</a></li>
+                  <li><a class="dropdown-item" href="Antarctica">Antarctica</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -44,14 +53,14 @@
       <div class="text-center">
         <h1>Weather Information</h1>
         <form method="post" action="/">
-          <label for="city">Enter City:</label>
-          <input type="text" id="city" name="city" required>
+          <label for="country">Enter City:</label>
+          <input type="text" id="country" name="country" required>
           <button type="submit" class="btn btn-outline-primary">Get Weather</button>
         </form>
       
         {% if data %}
 
-          <h2>City Name:</h2>
+          <h2>Country Name:</h2>
           <p>{{ data["cityname"]}}</p>
   
           <h3>Current Temperature:</h3>
@@ -70,6 +79,7 @@
         {% if not data %}
           <p>City not found. Please try again.</p>
         {% endif %}
+        
       </div>
 </body>
 </html>
