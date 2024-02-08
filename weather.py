@@ -64,6 +64,9 @@ def weather():
         "wind_speed": str(wind_speed) + 'm/s'
     })
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 def tocelcius(temp):
     return str(round(float(temp) - 273.16, 2))
