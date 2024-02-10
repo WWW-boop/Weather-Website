@@ -33,7 +33,7 @@ def weather():
     if request.method == 'POST':
         country = request.form['country']
     else:
-        country = 'Japan'
+        country = 'songkhla'
 
     try:
         source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' + country + '&appid=' + api_key).read()
