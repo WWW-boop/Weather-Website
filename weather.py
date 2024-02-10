@@ -77,6 +77,11 @@ def history():
         rows = cur.fetchall()
         return render_template('history.html', rows=rows)
 
+@app.route('/map')
+def map():
+    return render_template('map.html')
+
+
 @app.route('/Asia')
 def Asia():
     return render_template('Asia.html')
