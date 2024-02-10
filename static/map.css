@@ -1,0 +1,36 @@
+.row {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .red-box {  top: 0;   left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    background:red;
+    padding: 0px;
+  }
+  
+  .blue-box {   
+    display: block;
+    position: absolute;
+    top: 22%;   left: 50%;
+    -webkit-transform:translateX(-50%);
+    width: 80vw;
+    height: 50vh;
+    z-index: 1001;
+    background:rgba(222,222,222,.6);
+    padding: 20px;
+    
+    border-radius: 12px;
+    box-shadow: .5px 4px 20px rgba(0,0,0,.5);;
+  
+  }
+  
