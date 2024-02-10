@@ -68,6 +68,16 @@ def weather():
 def home():
     return render_template('home.html')
 
+@app.route('/history')
+def history():
+    conn = create_connection()
+    with conn:
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM weather")
+        rows = cur.fetchall()
+        return render_template('history.html', rows=rows)
+
+
 def tocelcius(temp):
     return str(round(float(temp) - 273.16, 2))
 
