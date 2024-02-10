@@ -77,6 +77,11 @@ def history():
         rows = cur.fetchall()
         return render_template('history.html', rows=rows)
 
+@app.route('/Asia')
+def Asia():
+    return render_template('Asia.html')
+
+
 
 def tocelcius(temp):
     return str(round(float(temp) - 273.16, 2))
