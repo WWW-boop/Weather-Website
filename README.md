@@ -1,4 +1,4 @@
-# Weather App
+# Weather App 🌦️
 
 This is a simple web application built with Flask that retrieves weather data from the OpenWeatherMap API and stores it in a SQLite database. Users can view current weather information, historical weather data, and explore a map view.
 
