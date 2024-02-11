@@ -7,7 +7,7 @@ This is a simple web application built with Flask that retrieves weather data fr
 - Display current weather information based on user input.
 - Store weather data in a SQLite database for future reference.
 - View historical weather data.
-- Explore a map view (under development).
+- Explore a map view.
 
 ## Prerequisites
 
