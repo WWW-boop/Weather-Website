@@ -18,20 +18,14 @@ This is a simple web application built with Flask that retrieves weather data fr
 ## Installation
 
 1. Clone this repository:
-
     ```
     git clone https://github.com/WWW-boop/Weather-Website.git
-
 2. Install dependencies:
-
     ```
     pip install -r requirements.txt
-
 3. Run the Flask application:
-
     ```
     flask --app web  run --debug
-
 ## Usage
 
 1. Navigate to the homepage to view the current weather or input a country name to get weather information for a specific location.
