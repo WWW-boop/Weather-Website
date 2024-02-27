@@ -42,7 +42,7 @@ This is a simple web application built with Flask that retrieves weather data fr
 
 ## Screenshots
 
-![IMG_8072_Original](https://cdn.discordapp.com/attachments/793726585974292491/1206033045036077127/image.png?ex=65da88cc&is=65c813cc&hm=2e843e29c880d662734f0bb3995ce50cdd3bd7eabdc470775ed45edea162e3d5&)
+![IMG_8072_Original](https://cdn.discordapp.com/attachments/793726585974292491/1206033045036077127/image.png?ex=65ecfdcc&is=65da88cc&hm=bad373a63852337277f8f13de82031d22032f4782a2d85e15a6516c5b24dec83&)
 
 
 ## Creator
