@@ -40,10 +40,6 @@ This is a simple web application built with Flask that retrieves weather data fr
 - World map by ManzDev (https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg)
 
 
-## Screenshots
-
-![IMG_8072_Original](https://cdn.discordapp.com/attachments/793726585974292491/1206033045036077127/image.png?ex=65ecfdcc&is=65da88cc&hm=bad373a63852337277f8f13de82031d22032f4782a2d85e15a6516c5b24dec83&)
-
 
 ## Creator
 - Wikran Petsuwan 6610110277
